@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'SUIT Variable';
+    src: url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.woff2') format('woff2');
+    /* 추가 폰트 포맷 및 경로 추가 가능 */
+}
+
+/* 페이지에서 폰트 사용 */
+* {
+    font-family: 'SUIT Variable', sans-serif;
+    outline: 1px solid #eee;
+}
+@import "reset.css";
+
+
+.App{
+    width:100%;
+}
+.text-2{
+    font-size:18px;
+}
+
+.section-0{
+    width:100%;
+}
+.section-0 .content{
+    display: flex;
+}
+.section-0 .logo img{
+    width:100px;
+    height:100px;
+}
+.section-0 .menu{
+    display: flex;
+}
+.section-0 .menu li {
+    margin-left:20px;
+}
+.section-1 {
+    width: 100%;
+    height:500px;
+    background-image: url('/images/banner.jpeg');
+    background-size: cover;
+}
+.section-2 img{
+    width:300px;
+    height:450px;
+    object-fit: cover;
+}
