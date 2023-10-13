@@ -4,6 +4,10 @@ import React from 'react';
 import SectionHeader from '../components/SectionHeader';
 import Head from 'next/head';
 import SectionFooter from '../components/SectionFooter';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css';
 
 const Home = () => {
     return (
@@ -17,17 +21,17 @@ const Home = () => {
                 </div>
             </section>
             <section className='section-2'>
-                <div>
+                <div className='ctn'>
                     <p>Best: 많이 찾는 디자인</p>
-                    <img src="/images/1.jpeg" alt="" />
-                    <img src="/images/2.jpeg" alt="" />
-                    <img src="/images/3.jpeg" alt="" />
-                </div>
-                <div>
-                    <p>디자이너 포트폴리오</p>
                     <img src="/images/4.jpeg" alt="" />
+                    <img src="/images/8.jpeg" alt="" />
                     <img src="/images/5.jpeg" alt="" />
-                    <img src="/images/6.jpeg" alt="" />
+                </div>
+                <div className='ctn'>
+                    <p>디자이너 포트폴리오</p>
+                    <img src="/images/7.jpeg" alt="" />
+                    <img src="/images/9.jpeg" alt="" />
+                    <img src="/images/1.jpeg" alt="" />
                 </div>
             </section>
             <section className='section-3'>

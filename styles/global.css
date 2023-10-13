@@ -7,7 +7,6 @@
 /* 페이지에서 폰트 사용 */
 * {
     font-family: 'SUIT Variable', sans-serif;
-    outline: 1px solid #eee;
 }
 
 @import "reset.css";
@@ -16,18 +15,27 @@
     font-size: 45px;
     font-weight: bold;
 }
-.text-2 {
-    font-size : 20px;
+a:hover{
+	color:#702BDE !important;
 }
-.isBold{
+.text-2 {
+    font-size: 20px;
+}
+
+.isBold {
     font-weight: bold;
 }
+
 .App {
     width: 100%;
 }
 
 .text-2 {
     font-size: 18px;
+}
+
+.text-3 {
+    font-size: 12px;
 }
 
 .nav {
@@ -37,10 +45,19 @@
 
 .section-0 {
     width: 100%;
+    margin-bottom:40px;
+}
+
+.section-0 .logo {
+    margin: 20px;
 }
 
 .section-0 .content {
     display: flex;
+}
+
+.section-0 .left-ctn {
+    margin-top: 50px;
 }
 
 .section-0 .logo img {
@@ -48,12 +65,34 @@
     height: 100px;
 }
 
+.section-0 .right-ctn {
+    margin-right: 40px;
+}
+
 .section-0 .menu {
     display: flex;
 }
-
+.section-0 .search-container button{
+    background-color: inherit;
+    /* 버튼 배경색 설정 */
+    /* 버튼 텍스트 색상 설정 */
+    border: none;
+    /* 테두리 제거 */
+    padding: 5px 10px;
+    /* 내부 여백 설정 */
+    border-radius: 20px;
+    /* 원하는 border-radius 값 설정 */
+    cursor: pointer;
+    /* 커서 모양 변경 */
+    margin-left: 10px;
+    /* 버튼과 검색창 사이의 간격 설정 */
+}
+.section-0 .search-container img{
+width:20px;
+height:20px;
+}
 .section-0 .menu li {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .section-0 .left-ctn {
@@ -64,7 +103,7 @@
 
 .section-0 .search-container {
     width: 500px;
-    height: 10px;
+    height: 30px;
     border-radius: 20px;
     /* 원하는 border-radius 값 설정 */
     background-color: #ffff;
@@ -99,7 +138,104 @@
 
 }
 
-.section-0 .search-container button {
+
+
+.section-1_request {
+    width: 600px;
+    height: 450px;
+    background-image: url('/images/2.jpeg');
+    background-size: cover;
+    margin: 50px auto;
+}
+
+.section-1_request .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff
+}
+
+.section-1_community {
+    width: 100%;
+    height: 500px;
+    background-image: url('/images/commu.jpeg');
+    background-size: cover;
+}
+
+.section-1_introduce {
+    width: 100%;
+    height: 500px;
+    background-image: url('/images/3.jpeg');
+    background-size: cover;
+}
+
+.section-1_introduce .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff
+}
+
+.section-1_portfolio {
+    width: 100%;
+    height: 500px;
+    background-image: url('/images/10.jpeg');
+    background-size: cover;
+}
+
+.section-1_portfolio .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.section-1_question {
+    width: 100%;
+    height: 500px;
+    background-image: url('/images/12.jpeg');
+    background-size: cover;
+}
+
+.section-1_question .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.section-1_notice {
+    width: 100%;
+    height: 500px;
+    background-image: url('/images/11.jpeg');
+    background-size: cover;
+}
+
+.section-1_notice .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.section-1_community .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.section-1 .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.section-1_community .search-container button {
     background-color: #007BFF;
     /* 버튼 배경색 설정 */
     color: white;
@@ -116,14 +252,6 @@
     /* 버튼과 검색창 사이의 간격 설정 */
 }
 
-.section-1 .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-
 .section-1 {
     width: 100%;
     height: 500px;
@@ -131,26 +259,334 @@
     background-size: cover;
 }
 
+.section-2_community {
+    margin: 100px 0px 50px 0px;
+}
+
+.section-2_portfolio {
+    text-align: center;
+    margin: 200px 150px;
+}
+
+.section-2_community .text-2 {
+    text-align: center;
+    padding: 30px;
+}
+
+.section-2_introduce {
+    text-align: center;
+    margin: 150px;
+}
+
+.section-2_introduce .ctn_1 .text-3.isBold {
+    width: 70px;
+    /* 박스의 너비 */
+    height: 30px;
+    /* 박스의 높이 */
+    /* 테두리 스타일 */
+    display: flex;
+    /* 내부 텍스트를 중앙 정렬하기 위한 flex 설정 */
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    background-color: #702BDE;
+    /* 박스의 배경색 */
+    color: #fff;
+
+}
+
+.section-2_introduce .ctn_1,
+.ctn_2,
+.ctn_3 {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.section-2_introduce .ctn_2 .text-3.isBold {
+    width: 70px;
+    /* 박스의 너비 */
+    height: 30px;
+    /* 박스의 높이 */
+    /* 테두리 스타일 */
+    display: flex;
+    /* 내부 텍스트를 중앙 정렬하기 위한 flex 설정 */
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    background-color: #702BDE;
+    /* 박스의 배경색 */
+    color: #fff;
+}
+
+.section-2_introduce .textbox_1,
+.textbox_2,
+.textbox_3 {
+    margin: 100px 0px;
+}
+
+.section-2_introduce .ctn_3 .text-3.isBold {
+    width: 120px;
+    /* 박스의 너비 */
+    height: 30px;
+    /* 박스의 높이 */
+    /* 테두리 스타일 */
+    display: flex;
+    /* 내부 텍스트를 중앙 정렬하기 위한 flex 설정 */
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    background-color: #702BDE;
+    /* 박스의 배경색 */
+    color: #fff;
+}
+
+
+
+
+
+
+.section-2_community .search-container input[type="text"] {
+    border: none;
+    /* 테두리 제거 */
+    padding-left: 30px;
+    /* 내부 여백 설정 */
+    border-radius: 20px;
+    /* 원하는 border-radius 값 설정 */
+    flex: 1;
+    /* 남은 공간을 채우기 위해 확장 */
+}
+
+.section-2_request {
+    text-align: center;
+    margin: 80px 0px;
+}
+
+.section-2_community .search-container {
+    width: 500px;
+    height: 30px;
+    border-radius: 20px;
+    /* 원하는 border-radius 값 설정 */
+    background-color: #ffff;
+    /* 배경색 설정 */
+    padding: 10px;
+    /* 내부 여백 설정 */
+    display: flex;
+    /* Flexbox를 사용하여 자식 요소 배치 설정 */
+    align-items: center;
+    /* 수직 정렬 설정 */
+    outline: 1px solid #007BFF
+}
+
+.section-2_community .search-container button {
+    position: relative;
+    /* 버튼 배경색 설정 */
+    color: white;
+    /* 버튼 텍스트 색상 설정 */
+    border: none;
+    /* 테두리 제거 */
+    /* 내부 여백 설정 */
+    border-radius: 20px;
+    /* 원하는 border-radius 값 설정 */
+    cursor: pointer;
+    /* 커서 모양 변경 */
+    margin-left: 10px;
+    /* 버튼과 검색창 사이의 간격 설정 */
+    background-color: #fff;
+}
+
+.section-2_community .search-container button img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -9px;
+}
+.section-2_portfolio img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    margin: 50px 20px 20px 20px;  
+}
 .section-2 img {
     width: 300px;
     height: 400px;
     object-fit: cover;
-    margin:50px 20px 20px 20px;
+    margin: 50px 20px 20px 20px;
 }
-.section-2 div {
+
+.section-2_community .ctn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section-2_community .btn {
+    width: 150px;
     text-align: center;
-    width:1280px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #702BDE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
 }
-.section-2 p{
+
+.section-2 .ctn {
+    text-align: center;
+    width: 1280px;
+}
+
+.section-2 p {
     text-align: left;
 }
-.section-3{
-    margin:100px 0px 100px 140px;
+
+.section-3 {
+    margin: 100px 0px 100px 140px;
 }
-.section-3 p{
- margin:9px;
+
+.section-3 p {
+    margin: 9px;
 }
+
+.section-3_request {
+    height: 1000px;
+    color: #fff;
+    background-color: #702BDE;
+    margin: 60px;
+}
+
+.section-3_request .text-1:nth-of-type(1) {
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+
+.section-3_request .ctn_1 {
+    margin-left: 180px;
+}
+
+.section-3_request .ctn_2 {
+    margin: 50px 0px 0px 180px;
+}
+
+.section-3_request .ctn_3 {
+    margin: 50px 0px 30px 180px;
+}
+
+.section-3_community {
+    margin: 70px 0px 70px 0px;
+    /* 수평 가운데 정렬 */
+    align-items: center;
+    /* 수직 가운데 정렬 */
+}
+
+.section-3_community .custom-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    /* 테이블 셀 간의 간격을 없애기 위해 사용 */
+    width: 1000px;
+    text-align: left;
+}
+
+.custom-table .header-cell:nth-child(1) {
+    /* 번호 */
+    width: 10%;
+}
+
+.custom-table .header-cell:nth-child(2) {
+    /* 제목 */
+    width: 60%;
+    text-align: center;
+}
+
+.custom-table .header-cell:nth-child(3) {
+    /* 작성자 */
+    width: 10%;
+}
+
+.custom-table .header-cell:nth-child(4) {
+    /* 작성일 */
+    width: 10%;
+}
+
+.custom-table .header-cell:nth-child(5) {
+    /* 조회 */
+    width: 10%;
+}
+
+.custom-table .header-cell:nth-child(5) {
+    /* 조회 */
+    width: 10%;
+}
+
+.custom-table tr td:nth-of-type(2) {
+    text-align: center;
+}
+
+
+
+.section-3_community .custom-table th,
+.custom-table td {
+    padding: 8px 12px;
+    /* 셀 안의 여백 조정 */
+    border-bottom: 1px solid #000;
+    /* 바닥 라인만 추가 */
+}
+
+.section-3_community .custom-table th {
+    background-color: #ffff !important;
+    /* 헤더 배경색 설정 */
+    font-weight: bold;
+    /* 헤더 글꼴 두껍게 설정 */
+}
+
+.section-3_community .custom-table tbody tr:nth-child(even) {
+    background-color: #ffff;
+    /* 짝수 번째 행 배경색 설정 */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    /* 테이블과의 간격 조정 */
+}
+
+.page-btn {
+    width:30px;
+    height:30px;
+    border-radius: 3px;
+    color: white;
+    margin: 0px 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.page-btn:hover {
+    background-color: #702BDE
+}
+
+
+
+
+
 footer {
     background-color: #f6f6f6;
-    height:200px;
+    height: 200px;
+}
+
+.footer-area {
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer-area p {
+    padding: 5px;
 }
