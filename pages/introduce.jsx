@@ -22,7 +22,7 @@ const introduce = () => {
             </section>
             <section className='section-2_introduce'>
                 <p className='text-2 isBold'>특별하고 다양한<br />명함 디자인을 원하세요?</p>
-                <div className='textbox_1'>
+                <div className='textbox textbox_1'>
                     <div className='ctn_1'>
                         <p className='text-3 isBold'>개인고객</p>
                     </div>
@@ -31,7 +31,7 @@ const introduce = () => {
                         더불어 단순히 디자인 의뢰뿐만 아닌, 내가 원하는 디자인 전문가를 링크업에서 찾을 수 있습니다.<br />
                         믿을 수 있는 비즈니스 파트너에게 간편하게 의뢰해보세요.</p>
                 </div>
-                <div className='textbox_2'>
+                <div className='textbox textbox_2'>
                     <div className='ctn_2'>
                         <p className='text-3 isBold'>디자인 전문가</p>
                     </div>
@@ -42,7 +42,7 @@ const introduce = () => {
                         커리어 성장이 가능합니다.<br/>
                         링크업 커뮤니티를 통해 다양하고 자유로운 의견을 나눠보세요.</p>
                 </div>
-                <div className='textbox_3'>
+                <div className='textbox textbox_3'>
                     <div className='ctn_3'>
                         <p className='text-3 isBold'>링크업만의 특별한 장점</p>
                     </div>
