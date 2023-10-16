@@ -38,10 +38,10 @@ function SectionHeader() {
                     </ul>
                     <div className='right-ctn'>
                         <div>
-                            <Link href="/community">로그인</Link>
-                            <Link href="/community">회원가입</Link>
+                            <Link href="/login" style={{margin:"10px"}}>로그인</Link>
+                            <Link href="/">회원가입</Link>
                         </div>
-                        <p>고객센터  052-123-4567</p>
+                        <p className='text-2'>고객센터  052-123-4567</p>
                     </div>
                 </div>
             </section>

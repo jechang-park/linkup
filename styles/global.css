@@ -71,6 +71,12 @@ a:hover {
 .section-0 .right-ctn {
     margin-right: 40px;
 }
+.section-0 .right-ctn > div {
+    margin-bottom:10px;
+}
+.section-0 .right-ctn .links-container a{
+    margin:10px !important;
+}
 
 .section-0 .menu {
     display: flex;
@@ -236,7 +242,111 @@ a:hover {
     height: 100%;
 }
 
+.section-1_login {
+    padding-top: 200px;
+    margin-bottom: 300px;
+}
 
+.section-1_login .ctn {
+    display: flex;
+    justify-content: center;
+}
+
+.section-1_login img {
+    width: 100px;
+    height: 100px;
+}
+
+.section-1_login .btn button {
+    display: inline-block;
+    /* 또는 block으로 설정할 수 있지만, inline-block이 레이아웃에 더 적은 영향을 미칩니다. */
+    width: 250px;
+    /* 원하는 너비 설정 */
+    background-color: #007BFF;
+    /* 버튼 배경색 설정 */
+    color: white;
+    /* 버튼 텍스트 색상 설정 */
+    border: none;
+    /* 테두리 제거 */
+    padding: 5px 10px;
+    /* 내부 여백 설정 */
+    border-radius: 5px;
+    /* 원하는 border-radius 값 설정 */
+    cursor: pointer;
+    /* 커서 모양 변경 */
+    margin-left: 10px;
+    /* 버튼과 검색창 사이의 간격 설정 */
+    height: 30px;
+}
+
+.section-1_login label input {
+    display: inline;
+    width: 25px;
+}
+
+.section-1_login .ctn_1,
+.section-1_login .ctn_2,
+.section-1_login .ctn_3 {
+    text-align: center;
+}
+.section-1_login .ctn_1 label{
+    margin-right:30px;
+}
+.section-1_login .ctn_1 span {
+    display: inline-block; 
+    margin:0px 3px;
+    color:#878787
+}
+
+.section-1_login .ctn_1 {
+    margin-top: 50px;
+}
+
+
+
+.section-1_login .btn {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-1_login .ctn_2 {
+    display: flex;
+    /* Flexbox 레이아웃을 활성화합니다. */
+    flex-direction: column;
+    /* 자식 요소들을 세로로 배열합니다. */
+    align-items: center;
+    /* 가로 방향으로 중앙 정렬합니다. */
+    width: 100%;
+
+}
+
+.ctn_2 input::placeholder {
+    padding-left: 10px;
+    color: #C7C6C6;
+}
+
+
+
+
+.section-1_login input {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 7px;
+}
+
+.section-1_login .ctn_3 {
+    display: flex;
+    justify-content: center;
+}
+.section-1_login .ctn_3 span {
+    display: flex;
+    justify-content: center;
+    margin:0px 20px;
+    color:#878787
+}
 .section-1 .banner {
     display: flex;
     justify-content: center;
@@ -286,10 +396,12 @@ a:hover {
     text-align: center;
     margin: 150px;
 }
-.section-2{
-      text-align: center;
+
+.section-2 {
+    text-align: center;
     margin: 200px 150px;
 }
+
 .section-2_introduce .ctn_1 .text-3.isBold {
     width: 70px;
     /* 박스의 너비 */
@@ -462,13 +574,12 @@ a:hover {
     text-align: center;
     width: 100%;
     /* 기본적으로 너비를 100%로 설정 */
-    max-width: 1280px;
     /* 최소 너비를 1280px로 설정 */
 }
 
 .section-2 p {
     max-width: 450px;
-    margin-top:40px;
+    margin-top: 40px;
 }
 
 .section-3 {
@@ -523,7 +634,7 @@ a:hover {
     border-collapse: collapse;
     /* 테이블 셀 간의 간격을 없애기 위해 사용 */
     max-width: 1000px;
-    width:100%;
+    width: 100%;
     text-align: left;
 }
 
@@ -634,9 +745,10 @@ footer {
 
 @media (max-width: 600px) {
 
-.section-3{
-    margin:0px;
-}
+    .section-3 {
+        margin: 0px;
+    }
+
     .section-3_request {
         height: 100%;
     }
