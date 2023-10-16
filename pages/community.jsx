@@ -31,62 +31,62 @@ const community = () => {
                 </div>
             </section>
             <section className='section-3_community'>
-                <table className="custom-table">
-                    <thead>
-                        <tr>
-                            <th className="header-cell">번호</th>
-                            <th className="header-cell">제목</th>
-                            <th className="header-cell">작성자</th>
-                            <th className="header-cell">작성일</th>
-                            <th className="header-cell">조회</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>게시물 제목 1</td>
-                            <td>작성자 1</td>
-                            <td>2023-10-11</td>
-                            <td>100</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>게시물 제목 1</td>
-                            <td>작성자 1</td>
-                            <td>2023-10-11</td>
-                            <td>100</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>게시물 제목 1</td>
-                            <td>작성자 1</td>
-                            <td>2023-10-11</td>
-                            <td>100</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>게시물 제목 1</td>
-                            <td>작성자 1</td>
-                            <td>2023-10-11</td>
-                            <td>100</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>게시물 제목 1</td>
-                            <td>작성자 1</td>
-                            <td>2023-10-11</td>
-                            <td>100</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>게시물 제목 1</td>
-                            <td>작성자 1</td>
-                            <td>2023-10-11</td>
-                            <td>100</td>
-                        </tr>
-                        {/* 다른 게시물 행들을 추가할 수 있습니다 */}
-                    </tbody>
-                </table>
+               <table className="custom-table">
+    <thead>
+        <tr>
+            <th className="header-cell">번호</th>
+            <th className="header-cell">제목</th>
+            <th className="header-cell">작성자</th>
+            <th className="header-cell">작성일</th>
+            <th className="header-cell">조회</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>디자인 포트폴리오</td>
+            <td>디자이너</td>
+            <td>2023-10-11</td>
+            <td>1100</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>이런 디자인 어떤가요?</td>
+            <td>디자이너</td>
+            <td>2023-10-11</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>디자인 관련 조언 부탁드립니다.</td>
+            <td>디자이너</td> 
+            <td>2023-10-11</td>
+            <td>5100</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>궁금한 점이 있습니다.</td>
+            <td>디자이너</td> 
+            <td>2023-10-11</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>현직 디자이너의 조언을 듣고 싶습니다.</td>
+            <td>디자이너</td> 
+            <td>2023-10-11</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>디자인 선배님들께 조언 구합니다...</td>
+            <td>디자이너</td> 
+            <td>2023-10-11</td>
+            <td>140</td>
+        </tr>
+    </tbody>
+</table>
+
                 <div className="pagination">
         <button className="page-btn">1</button>
         <button className="page-btn">2</button>

@@ -5,7 +5,7 @@ import SectionHeader from '../components/SectionHeader';
 import Head from 'next/head';
 import SectionFooter from '../components/SectionFooter';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {Navigation ,  Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay , Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -16,11 +16,11 @@ const Home = () => {
             </Head>
             <SectionHeader></SectionHeader>
             <Swiper
-                modules={[ Navigation , Autoplay]}
+                modules={[Navigation, Autoplay]}
                 navigation={true}
                 slidesPerView={1}
                 autoplay={{
-                    delay: 100000,
+                    delay: 4000,
                     disableOnInteraction: false,
                 }}
             >
@@ -38,10 +38,12 @@ const Home = () => {
                         </div>
                     </section>
                 </SwiperSlide>
-            </Swiper>
+            </Swiper
+
+            >
 
             <section className='section-2'>
-            <p>Best: 많이 찾는 디자인</p>
+                <p>Best: 많이 찾는 디자인</p>
                 <div className='ctn'>
                     <img src="/images/4.jpeg" alt="" />
                     <img src="/images/8.jpeg" alt="" />
@@ -54,6 +56,32 @@ const Home = () => {
                     <img src="/images/1.jpeg" alt="" />
                 </div>
             </section>
+            <div className='swiper_m'>
+                <Swiper
+                    modules={[Autoplay, Pagination]}
+                    pagination={true}
+                    slidesPerView={1}
+                    autoplay={{
+                        delay: 4000,
+                        disableOnInteraction: false
+                    }}>
+                    <section className='section-2'>
+                        <p>Best: 많이 찾는 디자인</p>
+                        <div className='ctn'>
+                            <SwiperSlide> <img src="/images/4.jpeg" alt="" /></SwiperSlide>
+                            <SwiperSlide>     <img src="/images/8.jpeg" alt="" /></SwiperSlide>
+                            <SwiperSlide>      <img src="/images/5.jpeg" alt="" /></SwiperSlide>
+                        </div>
+                        <div className='ctn'>
+                            <p>디자이너 포트폴리오</p>
+                            <SwiperSlide>        <img src="/images/7.jpeg" alt="" /></SwiperSlide>
+                            <SwiperSlide>           <img src="/images/9.jpeg" alt="" /></SwiperSlide>
+                            <SwiperSlide>         <img src="/images/1.jpeg" alt="" /></SwiperSlide>
+                        </div>
+                    </section>
+
+                </Swiper>
+            </div>
             <section className='section-3'>
                 <p className='text-2 isBold'>디자인 의뢰하기</p>
                 <p className='text-2'>디자인 시안 : 시안은 한 가지만 가능하며 여러 시안이 제공되지 않습니다.</p>

@@ -863,11 +863,44 @@ footer {
         width: 50px;
         height: 50px;
     }
+    .section-3{
+        margin:20px;
+    }
 }
 
-
+@media (min-width : 601px) {
+  .swiper_m{
+    display: none;
+  }
+}
 @media (max-width: 600px) {
+    .section-2_introduce{
+        margin:0px;
+        padding:30px;
+    }
+    .section-2_portfolio {
+        text-align: center;
+        margin:30px;
+    }
+    .section-2{
+        display: none;
+    }
 
+    .swiper-slide{
+        display: flex !important;
+        justify-content:  center !important;
+    }
+    .swiper-slide img{
+        margin:35px 0px;
+        text-align: center;
+        width:200px !important;
+        height:300px !important;
+        object-fit: cover;
+    }
+    .section-1 .banner p{
+        text-align: center;
+        font-size:30px;
+    }
     .section-3 {
         margin: 0px;
     }
@@ -876,13 +909,15 @@ footer {
         height: 100%;
     }
 
+
     .section-3_request .ctn_1,
     .section-3_request .ctn_2,
     .section-3_request .ctn_3 {
-        padding-left: 0px;
-        padding-bottom: 60px;
+        padding:30px;
     }
-
+    .section-2_request p{
+        font-size:30px;
+    }
     .custom-table thead {
         display: none;
         /* 헤더 숨기기 */
