@@ -7,7 +7,7 @@
 /* 페이지에서 폰트 사용 */
 * {
     font-family: 'SUIT Variable', sans-serif;
-    outline: 1px solid #eee;
+    outline:  1px solid #eee;
 }
 
 @import "reset.css";
@@ -19,6 +19,10 @@
 
 a:hover {
     color: #702BDE !important;
+}
+
+.text-m {
+    font-size: 30px;
 }
 
 .text-2 {
@@ -71,11 +75,9 @@ a:hover {
 .section-0 .right-ctn {
     margin-right: 40px;
 }
-.section-0 .right-ctn > div {
-    margin-bottom:10px;
-}
-.section-0 .right-ctn .links-container a{
-    margin:10px !important;
+
+.section-0 .right-ctn>div {
+    margin-bottom: 10px;
 }
 
 .section-0 .menu {
@@ -169,6 +171,59 @@ a:hover {
     height: 100%;
     color: #fff
 }
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: none !important;
+    /* !important를 사용하여 기존 스타일을 오버라이드 */
+}
+
+/* 커스텀 이미지 적용 */
+.swiper-button-prev,
+.swiper-button-next {
+    background-repeat: no-repeat;
+    background-position: center;
+    /* 이미지를 버튼의 중앙에 위치시킵니다. */
+    background-size: 50%;
+    /* 이미지 크기를 줄입니다. 필요에 따라 조정할 수 있습니다. */
+    box-sizing: border-box;
+    /* padding이 전체 크기에 영향을 주지 않도록 합니다. */
+    width: 36px !important;
+    /* 버튼의 전체 크기. padding을 고려하여 조금 더 크게 설정합니다. */
+    height: 36px !important;
+    /* 버튼의 전체 크기. padding을 고려하여 조금 더 크게 설정합니다. */
+    padding: 3px;
+    /* 내부 여백을 추가합니다. 이 값은 이미지의 크기와 여백에 따라 조정할 수 있습니다. */
+    border-radius: 50%;
+    /* 원형 모양을 만듭니다. */
+    border: none;
+    /* 필요에 따라 테두리를 제거합니다. */
+}
+
+.swiper-button-prev {
+    background-image: url('/images/left-arrow.png') !important;
+    /* 여기에 실제 이미지 경로를 사용 */
+    background-color: #fff;
+}
+
+.swiper-button-next {
+    background-image: url('/images/right-arrow.png') !important;
+    /* 여기에 실제 이미지 경로를 사용 */
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section-1_community {
     width: 100%;
@@ -289,13 +344,15 @@ a:hover {
 .section-1_login .ctn_3 {
     text-align: center;
 }
-.section-1_login .ctn_1 label{
-    margin-right:30px;
+
+.section-1_login .ctn_1 label {
+    margin-right: 30px;
 }
+
 .section-1_login .ctn_1 span {
-    display: inline-block; 
-    margin:0px 3px;
-    color:#878787
+    display: inline-block;
+    margin: 0px 3px;
+    color: #878787
 }
 
 .section-1_login .ctn_1 {
@@ -341,12 +398,14 @@ a:hover {
     display: flex;
     justify-content: center;
 }
+
 .section-1_login .ctn_3 span {
     display: flex;
     justify-content: center;
-    margin:0px 20px;
-    color:#878787
+    margin: 0px 20px;
+    color: #878787
 }
+
 .section-1 .banner {
     display: flex;
     justify-content: center;
@@ -378,6 +437,23 @@ a:hover {
     background-size: cover;
 }
 
+.section-1.slider-2 {
+    width: 100%;
+    height: 500px;
+    background-image: url('/images/banner2.jpeg');
+    background-size: cover;
+}
+
+.section-1.slider-2 .banner {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    color:#fff;
+    padding-left:10vw;
+    
+}
+
 .section-2_community {
     margin: 100px 0px 50px 0px;
 }
@@ -398,7 +474,6 @@ a:hover {
 }
 
 .section-2 {
-    text-align: center;
     margin: 200px 150px;
 }
 
@@ -578,8 +653,9 @@ a:hover {
 }
 
 .section-2 p {
-    max-width: 450px;
     margin-top: 40px;
+    text-align: center;
+    
 }
 
 .section-3 {
@@ -737,11 +813,59 @@ footer {
     padding: 5px;
 }
 
-@media (max-width: 1000px) {
-    .section-0 {
+@media (min-width : 1001px) {
+    .section-0 .header_m {
         display: none;
     }
 }
+
+@media (max-width: 1000px) {
+    .section-0 .nav {
+        display: none;
+    }
+
+    .section-2 {
+        margin: 10px;
+    }
+
+    .header_m .header_ctn {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header_m .status_m {
+        display: inline;
+        text-align: right;
+        padding: 20px;
+    }
+
+    .header_m .logo_m img {
+        margin: 30px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .header_m .menu {
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        background-color: #fff;
+    }
+
+    .header_m .menu li {
+        margin-top: 60px;
+    }
+
+    .header_m .status_m img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
 
 @media (max-width: 600px) {
 

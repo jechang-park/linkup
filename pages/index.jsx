@@ -5,24 +5,44 @@ import SectionHeader from '../components/SectionHeader';
 import Head from 'next/head';
 import SectionFooter from '../components/SectionFooter';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import {Navigation ,  Autoplay } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css';
-
+import 'swiper/css/navigation';
 const Home = () => {
     return (
         <div className="App">
             <Head>
             </Head>
             <SectionHeader></SectionHeader>
-            <section className='section-1'>
-                <div className='banner'>
-                    <p className='text-1'>명함 디자인이 필요할 땐<br /> 링크업!</p>
-                </div>
-            </section>
+            <Swiper
+                modules={[ Navigation , Autoplay]}
+                navigation={true}
+                slidesPerView={1}
+                autoplay={{
+                    delay: 100000,
+                    disableOnInteraction: false,
+                }}
+            >
+                <SwiperSlide>
+                    <section className='section-1 slider-1'>
+                        <div className='banner'>
+                            <p className='text-1'>명함 디자인이 필요할 땐<br /> 링크업!</p>
+                        </div>
+                    </section>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <section className='section-1 slider-2'>
+                        <div className='banner'>
+                            <p className='text-1'>명함 디자인이 필요할 땐<br /> 링크업!</p>
+                        </div>
+                    </section>
+                </SwiperSlide>
+            </Swiper>
+
             <section className='section-2'>
+            <p>Best: 많이 찾는 디자인</p>
                 <div className='ctn'>
-                    <p>Best: 많이 찾는 디자인</p>
                     <img src="/images/4.jpeg" alt="" />
                     <img src="/images/8.jpeg" alt="" />
                     <img src="/images/5.jpeg" alt="" />
