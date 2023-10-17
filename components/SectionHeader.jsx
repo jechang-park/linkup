@@ -17,11 +17,11 @@ function SectionHeader() {
     return (
         <div className='App'>
             <section className='section-0'>
-                <div className='header_m'>
+               <div className='header_m'>
                     <div className='header_ctn'>
                         <div className='logo_m'>
-                            <img src="/images/logo.png" alt="" />
-                        </div>
+                        <Link href="/"><img src="./images/logo.png" alt="" /></Link>
+                        </div> 
                         <div className='status_m' onClick={toggleMenu}>
                             <img src={menuIcon} alt="menu" />
                         </div>
