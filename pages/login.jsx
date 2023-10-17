@@ -5,7 +5,7 @@ import Head from 'next/head';
 import SectionFooter from '../components/SectionFooter';
 import React, { useState } from 'react';
 import Toggle from 'react-toggle';
-import "react-toggle/style.css"; // 토글 스타일링을 위한 CSS. 이 부분은 토글 버튼을 스타일링하기 위해 필요합니다.
+import "react-toggle/style.css"; 
 const login = () => {
     const [toggleStatus, setToggleStatus] = useState(false);
 
