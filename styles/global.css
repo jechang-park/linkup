@@ -7,6 +7,7 @@
 /* 페이지에서 폰트 사용 */
 * {
     font-family: 'SUIT Variable', sans-serif;
+    outline:  1px solid #eee;
 }
 
 @import "reset.css";
@@ -671,7 +672,7 @@ a:hover {
     height: 1000px;
     color: #fff;
     background-color: #702BDE;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .section-3_request .text-1:nth-of-type(1) {
