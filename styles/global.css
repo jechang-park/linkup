@@ -843,22 +843,25 @@ footer {
         width: 150px;
         height: 150px;
     }
+
     .header_m .menu {
+
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .header_m .menu-container {
         width: 100%;
         /* 혹은 100% 등의 값을 사용 */
         z-index: 999;
-        height:100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        height: 100%;
         position: fixed;
         background-color: #fff;
-        overflow-y: auto;  /* 수직 스크롤 */
+        /* 수직 스크롤 */
     }
 
-
     .header_m .menu li {
-        padding-top: 30px;
+        padding-top: 15px;
     }
 
     .header_m .status_m img {
