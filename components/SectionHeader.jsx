@@ -26,8 +26,9 @@ function SectionHeader() {
                             <img src={menuIcon} alt="menu" />
                         </div>
                     </div>
-                    <div>
+                    <div className='menu-container'>
                         {menuOpen && (
+                            
                             <ul className='menu'>
                                 <li className='text-m'><Link href="/introduce">링크업 소개</Link> </li>
                                 <li className='text-m'>
